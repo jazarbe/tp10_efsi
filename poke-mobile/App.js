@@ -37,7 +37,7 @@ export default function App() {
       }
 
       setFavorites(newFavorites);
-      await AsyncStorage.setItem('@superFavs', JSON.stringify(newFavorites));
+      await AsyncStorage.setItem('@pokeFavs', JSON.stringify(newFavorites));
     } catch (error) {
       console.error('Error guardando favoritos:', error);
     }
